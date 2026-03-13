@@ -1,6 +1,7 @@
 {
   "name": "zread-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "mcpName": "io.github.ejfkdev/zread-mcp",
   "description": "Zread.ai MCP Server - 连接 zread.ai 文档平台的 MCP 服务器，让 AI 助手能够阅读 GitHub 仓库文档、搜索代码、与仓库 AI 对话。",
   "type": "module",
   "main": "zread-mcp-server.js",
