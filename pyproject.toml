@@ -1,0 +1,23 @@
+[project]
+name = "zread-mcp"
+version = "1.0.0"
+description = "Zread.ai MCP Server - 连接 zread.ai 文档平台的 MCP 服务器，让 AI 助手能够阅读 GitHub 仓库文档、搜索代码、与仓库 AI 对话。"
+readme = "README.md"
+authors = [
+    { name = "ejfkdev", email = "152914458+ejfkdev@users.noreply.github.com" },
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["fastmcp>=2.14.0", "requests>=2.32.0"]
+
+[project.scripts]
+zread-mcp = "zread_mcp_server:main"
+
+[project.urls]
+Homepage = "https://github.com/ejfkdev/zread-mcp"
+Repository = "https://github.com/ejfkdev/zread-mcp"
+Issues = "https://github.com/ejfkdev/zread-mcp/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

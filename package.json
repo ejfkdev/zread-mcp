@@ -1,0 +1,57 @@
+{
+  "name": "zread-mcp",
+  "version": "1.0.0",
+  "description": "Zread.ai MCP Server - 连接 zread.ai 文档平台的 MCP 服务器，让 AI 助手能够阅读 GitHub 仓库文档、搜索代码、与仓库 AI 对话。",
+  "type": "module",
+  "main": "zread-mcp-server.js",
+  "module": "zread-mcp-server.js",
+  "bin": {
+    "zread-mcp": "./zread-mcp-server.js"
+  },
+  "files": [
+    "zread-mcp-server.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node zread-mcp-server.js",
+    "stdio": "node zread-mcp-server.js --transport stdio",
+    "http": "node zread-mcp-server.js --transport http",
+    "sse": "node zread-mcp-server.js --transport sse",
+    "test": "node zread-mcp-server.js --test"
+  },
+  "keywords": [
+    "mcp",
+    "zread",
+    "ai",
+    "llm",
+    "claude",
+    "model-context-protocol",
+    "mcp-server",
+    "code-repository",
+    "documentation"
+  ],
+  "author": "ejfkdev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ejfkdev/zread-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ejfkdev/zread-mcp/issues"
+  },
+  "homepage": "https://github.com/ejfkdev/zread-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "express": "^4.18.0",
+    "zod": "^3.22.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "preferGlobal": true,
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
